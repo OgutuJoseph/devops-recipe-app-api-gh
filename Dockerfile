@@ -1,5 +1,5 @@
 FROM python:3.9-alpine3.13
-LABEL maintainer="OgutuJoseph"
+LABEL maintainer="onyango.joseph@yahoo.com"
 
 ENV PYTHONUNBUFFERED 1
 
@@ -38,7 +38,7 @@ ENV PATH="/scripts:/py/bin:$PATH"
 
 USER django-user
 
-VOLUME /vol/web/media 
+VOLUME /vol/web/media
 VOLUME /vol/web/static
 
 CMD ["run.sh"]
